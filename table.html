@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. Use the table tag to design given image</title>
+    <style type="text/css">
+        #healthTable {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        .healthRecord {
+            text-align: center;
+            border: 1px solid;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="healthTable">
+        <thead>
+            <tr style="border-top: hidden; border-left: hidden;border-right: hidden;">
+                <th style="text-align: center;" colspan="4">Health Chart</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="healthRecord" rowspan="2">State of
+                    Health</td>
+                <td class="healthRecord" colspan="2">Fasting Value</td>
+                <td class="healthRecord">After Eating</td>
+            </tr>
+            <tr>
+                <td class="healthRecord">Minimum</td>
+                <td class="healthRecord">Maximum</td>
+                <td class="healthRecord">2 hours after eating</td>
+            </tr>
+            <tr>
+                <td class="healthRecord">Healthy</td>
+                <td class="healthRecord">70</td>
+                <td class="healthRecord">100</td>
+                <td class="healthRecord">Less than 140</td>
+            </tr>
+            <tr>
+                <td class="healthRecord">Pre-Diabetes</td>
+                <td class="healthRecord">101</td>
+                <td class="healthRecord">126</td>
+                <td class="healthRecord">140 to 200</td>
+            </tr>
+            <tr>
+                <td class="healthRecord">Diabetes</td>
+                <td class="healthRecord">More than 126</td>
+                <td class="healthRecord">N/A</td>
+                <td class="healthRecord">More than 200</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
